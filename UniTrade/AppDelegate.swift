@@ -10,7 +10,7 @@ import UIKit
 import Parse
 import Bolts
 
-@UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
@@ -18,10 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+        
+        //////////////////////////////////////////////////////////////////////
+        // Code for parse .. ( is just an instruction on Parse website)
         // [Optional] Power your app with Local Datastore. For more info, go to
         // https://parse.com/docs/ios_guide#localdatastore/iOS
         Parse.enableLocalDatastore()
-        
         // Initialize Parse.
         Parse.setApplicationId("dyhmHE7ndNcHF0KL5VeMsDrEiZUrXNM9iry1icUe",
             clientKey: "wcwOL28hX3X46hksy9XEXgW5cgBN7Zg7XFtdUn9u")
@@ -29,7 +31,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // [Optional] Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         
-        // ...
+        //////////////////////////////////////////////////////////////////////
+        // Send custom Analytics Data
+        let dimensions = [
+            "category" : "politics",    // What type of news is this?
+            "dayType" : "weekday"     // Is it a weekday or the weekend?
+        ]
+        // Send the dimensions to Parse along with the 'read' event
+        PFAnalytics.trackEvent("read", dimensions: dimensions)
+        //////////////////////////////////////////////////////////////////////
+        
         
         
         

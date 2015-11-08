@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		324410BC1BEECDB400A02A10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324410BB1BEECDB400A02A10 /* AppDelegate.swift */; };
-		324410BE1BEECDB400A02A10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324410BD1BEECDB400A02A10 /* ViewController.swift */; };
+		324410BE1BEECDB400A02A10 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324410BD1BEECDB400A02A10 /* main.swift */; };
 		324410C11BEECDB400A02A10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 324410BF1BEECDB400A02A10 /* Main.storyboard */; };
 		324410C31BEECDB400A02A10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324410C21BEECDB400A02A10 /* Assets.xcassets */; };
 		324410C61BEECDB400A02A10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 324410C41BEECDB400A02A10 /* LaunchScreen.storyboard */; };
@@ -25,12 +25,15 @@
 		324410E21BEED33C00A02A10 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324410E11BEED33C00A02A10 /* SystemConfiguration.framework */; };
 		324410E41BEED34600A02A10 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 324410E31BEED34600A02A10 /* libz.tbd */; };
 		324410E61BEED34E00A02A10 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 324410E51BEED34E00A02A10 /* libsqlite3.tbd */; };
+		324410EA1BEED9B700A02A10 /* logIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324410E91BEED9B700A02A10 /* logIn.swift */; };
+		324410EC1BEED9F400A02A10 /* post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324410EB1BEED9F400A02A10 /* post.swift */; };
+		324410EE1BEEDA4A00A02A10 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324410ED1BEEDA4A00A02A10 /* user.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		324410B81BEECDB400A02A10 /* UniTrade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniTrade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		324410BB1BEECDB400A02A10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		324410BD1BEECDB400A02A10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		324410BD1BEECDB400A02A10 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		324410C01BEECDB400A02A10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		324410C21BEECDB400A02A10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		324410C51BEECDB400A02A10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +51,9 @@
 		324410E11BEED33C00A02A10 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		324410E31BEED34600A02A10 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		324410E51BEED34E00A02A10 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		324410E91BEED9B700A02A10 /* logIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = logIn.swift; sourceTree = "<group>"; };
+		324410EB1BEED9F400A02A10 /* post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = post.swift; sourceTree = "<group>"; };
+		324410ED1BEEDA4A00A02A10 /* user.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,11 +113,14 @@
 			isa = PBXGroup;
 			children = (
 				324410BB1BEECDB400A02A10 /* AppDelegate.swift */,
-				324410BD1BEECDB400A02A10 /* ViewController.swift */,
+				324410BD1BEECDB400A02A10 /* main.swift */,
 				324410BF1BEECDB400A02A10 /* Main.storyboard */,
 				324410C21BEECDB400A02A10 /* Assets.xcassets */,
 				324410C41BEECDB400A02A10 /* LaunchScreen.storyboard */,
 				324410C71BEECDB400A02A10 /* Info.plist */,
+				324410E91BEED9B700A02A10 /* logIn.swift */,
+				324410EB1BEED9F400A02A10 /* post.swift */,
+				324410ED1BEEDA4A00A02A10 /* user.swift */,
 			);
 			path = UniTrade;
 			sourceTree = "<group>";
@@ -187,8 +196,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				324410BE1BEECDB400A02A10 /* ViewController.swift in Sources */,
+				324410EE1BEEDA4A00A02A10 /* user.swift in Sources */,
+				324410BE1BEECDB400A02A10 /* main.swift in Sources */,
 				324410BC1BEECDB400A02A10 /* AppDelegate.swift in Sources */,
+				324410EA1BEED9B700A02A10 /* logIn.swift in Sources */,
+				324410EC1BEED9F400A02A10 /* post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
